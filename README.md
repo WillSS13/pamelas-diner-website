@@ -1,8 +1,8 @@
 ### Pamela's Diner Website ###
 
-Course: 67-250 (Information Systems Mileux)
-Date Created: Spring 2022
-
+#### Course: 67-250 (Information Systems Mileux) ####
+#### Date Created: Spring 2022 ####
+ 
 ---
 
 ### Usage: ###
