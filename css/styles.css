@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* --------------------------------------------- header --------------------------------------------- */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:   linear-gradient(    rgba(4, 9, 30, 0.775), 
+                                            rgba(4, 9, 30, 0.775)),
+                        url(https://media.bizj.us/view/img/11675132/img3832*1200xx5184-2916-0-270.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.arrow {
+    position: absolute;
+    width: 5%;
+    bottom: 0;
+    padding-left: 47.5%;
+}
+
+nav {
+    display: flex;
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-left: 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links hr {
+    height: 1px;
+    background-color: #7fe2e4;
+    border: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 18px;
+    position: rel;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links ul li a.selected {
+    color: #f38faf;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f38faf;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/* --------------------------------------------- text box --------------------------------------------- */
+.text-box {
+    width: 90%;
+    color: #7fe2e4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.order-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f38faf;
+    position: relative;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #7fe2e4;
+    transition: 0.5s;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* --------------------------------------------- slideshow --------------------------------------------- */
+.slides {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.slides h1 {
+    padding-bottom: 5px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* ------------------------------------------- mailing list ------------------------------------------- */
+.mailing {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mailing-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.mailing-box h3 {
+    text-align: left;
+}
+
+.mailing-box label {
+    text-align: left;
+    color: black;
+}
+
+.mailing-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+.mailing-box p {
+    padding: 0;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+
+
+/* --------------------------------------------- reviews --------------------------------------------- */
+.reviews {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.review-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-col img {
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 10px;   
+}
+
+.review-col p {
+    padding: 0;
+}
+
+.review-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.layer:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* contact */
+.contact {
+    margin: 100px auto;
+    width: 80%;
+    background-image:   linear-gradient(    rgba(0,0,0,0.6), 
+                                            rgba(0,0,0,0.6)),
+                        url(https://media.bizj.us/view/img/11675132/img3832*1200xx5184-2916-0-270.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+/* --------------------------------------------- footer --------------------------------------------- */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons a {
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* ------------------------------------------- MENU.HTML ------------------------------------------- */
+.menu {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.menu-col {
+    flex-basis: 22%;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-col img {
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;   
+}
+
+.menu-col p {
+    padding: 0;
+}
+
+.menu-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.menu-layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.menu-layer:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* ------------------------------------------- ORDER.HTML ------------------------------------------- */
+.orders {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.orders-col {
+    flex-basis: 28%;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.orders-col img {
+    width: 100%;
+    margin: 10px;
+    border-radius: 10px;   
+}
+
+.orders-col p {
+    padding: 0;
+}
+
+.orders-col h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* ------------------------------------------- LOCATIONS.HTML ------------------------------------------- */
+.locations {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.location-col {
+    flex-basis: 48%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-col iframe {
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 10px;   
+}
+
+.location-col p {
+    padding-top: 35%;
+}
+
+.location-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* ------------------------------------------- CONTACT.HTML ------------------------------------------- */
+.map {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.map iframe {
+    width: 100%;
+
+}
+
+.map h2 {
+    color: #fff;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 10px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: left;
+}
+
+.contact-col div a {
+    font-size: 28px;
+    color: #7fe2e4;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+
+/* ------------------------------------------- ABOUT.HTML ------------------------------------------- */
+
+.sub-header {
+    height: 40vh;
+    width: 100%;
+    background-image:   linear-gradient(    rgba(4, 9, 30, 0.775), 
+                                            rgba(4, 9, 30, 0.775)),
+                        url(https://media.bizj.us/view/img/11675132/img3832*1200xx5184-2916-0-270.jpg);;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+    font-size: 55px;
+}
+
+.sub-header h2 {
+    display: none;
+}
+
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: auto;
+    background: #7fe2e4;
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+.footer h2 {
+    color:#7fe2e4
+}
+
+.sub-footer {
+    display: flex;
+    padding-right: 25%;
+    padding-left: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-footer p {
+    font-size: 20px;
+}
+
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col img {
+    width: 100%;
+}
+
+.about-col h1 {
+    padding-top: 0;
+}
+
+.about-col p {
+    padding: 15px 0 25px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pamela's Diner</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+   
+        <!-- Google fonts PT Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <script src="js/scripts.js"> </script>
+
+    </head>
+
+    <body>
+
+        <!--  header  -->
+        <section class="header">
+            <h2>.</h2>
+            <nav>
+                <h2>.</h2>
+                <a href="index.html"><img src="images/pamelaslogo.png" alt="logo"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a class="selected" href="index.html">HOME</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="order.html">ORDER ONLINE</a></li>
+                        <li><a href="locations.html">LOCATIONS & HOURS</a></li>
+                        <li><a href="reviews.html">REVIEWS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                
+            </nav>
+            
+            <!-- text box   -->
+            <div class="text-box">
+                <h1>Pamela's Diner</h1>
+                <p>
+                    Pamela's Diner is a prominent chain of diners in Pittsburgh, Pennsylvania, USA. Its specialties are crépe-style pancakes,  <br>
+                    omelets and Lyonnaise potatoes. It is "treasured" and is considered to be in the "pantheon of pancake purveyors". In 2013, <br>
+                    Pamela's Diner was featured by the Wall Street Journal in a "What to Do in Pittsburgh" feature story. Pamela's Diner is    <br>
+                    owned by Gail Klingensmith and Pam Cohen.[1] Both educated as teachers, the business partners handle different tasks,      <br>
+                    Klingensmith with the more business end and Cohen as "the culinary artist". The first Pamela's Diner location, in the      <br>
+                    Squirrel Hill neighborhood, opened in 1979. Subsequent locations have opened in Shadyside, the Strip District, Millvale,   <br>
+                    Oakland and Mt. Lebanon. 
+                </p>
+
+                <a href="order.html" class="order-btn">ORDER ONLINE NOW</a> <br>
+            </div>
+
+            <img class="arrow" src="images/downarrow.png" alt="downarrow">
+
+        </section>
+
+        <!--  slideshow   -->
+        <section class="slides">
+            <h1>Locations</h1>
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/walnutbanner.jpg" style="width:100%" alt="Walnut St">
+                <div class="text">Walnut St</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/forbesbanner.jpg" style="width:100%" alt="Forbes">
+                <div class="text">Forbes</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/stripbanner.jpg" style="width:100%" alt="Strip District">
+                <div class="text">Strip District</div>
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <script>
+                showSlides(1);
+            </script>
+            
+            <div style="text-align:center">
+                
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </section>
+
+        <!--  reviews   -->
+        <section class="reviews">
+            <h1>What's Everyone Saying?</h1>
+            <p>Click each image to see reviews.</p>
+
+            <div class="row">
+
+                <div class="review-col">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html"><img src="images/test1.jpg" alt="tripadvisor"><div class="layer"></div></a>
+                </div>
+
+                <div class="review-col">
+                    <a href="https://www.google.com/maps/place/Pamela's+Diner/@40.4412741,-79.9905368,14z/data=!4m11!1m2!2m1!1spamela's+diner!3m7!1s0x8834f229e57e54fb:0x85711e3bfcf4be29!8m2!3d40.4412653!4d-79.9575695!9m1!1b1!15sCg5wYW1lbGEncyBkaW5lciIDiAEBWhAiDnBhbWVsYSdzIGRpbmVykgEUYnJlYWtmYXN0X3Jlc3RhdXJhbnQ"><img src="images/test2.png" alt="Google reviews"><div class="layer"></div></a>
+                    
+                </div>
+
+                <div class="review-col">
+                    <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3"><img src="images/test3.png" alt="Yelp"><div class="layer"></div></a>
+                    
+                </div>
+
+            </div>
+
+            <!--  mailing box   -->
+            <div class="mailing-box">
+                <h3>Want to Join Our Mailing List?</h3>
+
+                <form class="mailing-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" maxlength="250" required>
+                    <input type="text" id="zip" name="zip" placeholder="Zip Code (12345)" pattern="[0-9]{5}">
+                    <input type="email" id="email" placeholder="Email">
+                    
+                    <label class="container">
+                        Indicate if you'd like to join Pamela's Newsletter
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                    <button type="submit" class="order-btn">SUBMIT</button>
+                </form>
+
+            </div>
+
+        </section>
+
+        <!--  contact   -->
+        <section class="contact">
+            <h1>Get In Contact With Us</h1>
+            <a href="contact.html" class="order-btn">CONTACT US</a>
+
+            
+
+        </section>
+
+        <!--  footer   -->
+        <section class="footer">
+            <h2>.</h2>
+            <section class="sub-footer"> 
+                <h2>.</h2>
+
+                <a href="index.html"><img src="images/pamelaslogo.png" alt="logo"></a>
+                <a href="references.html">Image references</a>
+                <p>&copy; 2022 Pamela's Diner &trade;</p>
+
+                <div class="icons">
+                    <a href="https://www.youtube.com/watch?v=Rb0Dw2t-nTE"><img src="images/youtube.jpg" alt="YouTube Icon"></a>
+                    <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Logo"></a>
+                    <a href="https://www.instagram.com/pamelasdiner/?hl=en " target="_blank"><img src="images/instagram.png" alt="instagram Logo"></a>
+                </div>
+
+            </section>
+
+        </section>
+
+    </body>
+
+</html>
